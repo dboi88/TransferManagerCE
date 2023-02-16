@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using TransferManagerCE.Common;
 using static TransferManager;
 using static TransferManagerCE.BuildingTypeHelper;
@@ -1174,6 +1174,10 @@ namespace TransferManagerCE.TransferRules
                 rule.AddReason(TransferReason.Grain);
                 rule.AddReason(TransferReason.Ore);
                 rule.AddReason(TransferReason.Logs);
+                rule.AddReason(TransferReason.Coal);
+                rule.AddReason(TransferReason.Lumber);
+                rule.AddReason(TransferReason.Petrol);
+                rule.AddReason(TransferReason.Food);
                 rule.m_incomingDistrict = true;
                 rule.m_incomingBuilding = true;
                 rule.m_import = true;
@@ -1192,6 +1196,7 @@ namespace TransferManagerCE.TransferRules
                 rule.AddReason(TransferReason.Plastics);
                 rule.AddReason(TransferReason.AnimalProducts);
                 rule.AddReason(TransferReason.Flours);
+                rule.AddReason(TransferReason.Goods);
                 rule.m_outgoingDistrict = true;
                 rule.m_outgoingBuilding = true;
                 rule.m_distance = true;
